@@ -2,7 +2,7 @@ import { z } from 'zod';
 
 const configSchema = z.object({
   appUrl: z.string(),
-  googleTrackingId: z.string(),
+  googleTrackingId: z.string().optional(),
   supabase: z.object({
     url: z.string(),
     anonKey: z.string(),
@@ -12,7 +12,7 @@ const configSchema = z.object({
 export const config = configSchema.parse({
   appUrl:
     process.env.NODE_ENV === 'production'
-      ? 'https://maily.to'
+      ? 'https://maily-to-9a8889115281.herokuapp.com'
       : 'http://localhost:3000',
   // googleTrackingId: process.env.NEXT_PUBLIC_GA_TRACKING_ID,
   supabase: {
