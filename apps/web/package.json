@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@maily-to/core": "workspace:*",
-    "@maily-to/render": "workspace:*",
+    "@maily-to/core": "^0.0.22",
+    "@maily-to/render": "^0.0.17",
     "@next/third-parties": "^14.2.15",
     "@radix-ui/react-avatar": "^1.1.1",
     "@radix-ui/react-dialog": "^1.1.2",
