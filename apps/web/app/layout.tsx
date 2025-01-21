@@ -75,7 +75,7 @@ export default function RootLayout(props: RootLayoutProps) {
         <TopLoader />
         {children}
         <Toaster richColors />
-        <GoogleAnalytics gaId={config.googleTrackingId} />
+        {/* <GoogleAnalytics gaId={config.googleTrackingId} /> */}
       </body>
     </html>
   );
